@@ -1,0 +1,15 @@
+{
+  "originHash" : "ccc33866d9a35b346e49924aff084c3f4286630357db31caa210e0632a7c9ba8",
+  "pins" : [
+    {
+      "identity" : "stark-ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/stark-contrast/stark-ios.git",
+      "state" : {
+        "branch" : "main",
+        "revision" : "6767f3699724f30ca2e13ce0f3ece9a770e5e149"
+      }
+    }
+  ],
+  "version" : 3
+}

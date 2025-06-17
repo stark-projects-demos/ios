@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D30958082E01F52500C1C8D6 /* StarkAccessibilityIOS in Frameworks */ = {isa = PBXBuildFile; productRef = D30958072E01F52500C1C8D6 /* StarkAccessibilityIOS */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		D30957EA2E01ED0100C1C8D6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -35,11 +39,6 @@
 			path = "Stark iOS Sample";
 			sourceTree = "<group>";
 		};
-		D30957EC2E01ED0100C1C8D6 /* Stark iOS SampleTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Stark iOS SampleTests";
-			sourceTree = "<group>";
-		};
 		D30957F62E01ED0100C1C8D6 /* Stark iOS SampleUITests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Stark iOS SampleUITests";
@@ -66,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D30958082E01F52500C1C8D6 /* StarkAccessibilityIOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				D30957DE2E01ED0000C1C8D6 /* Stark iOS Sample */,
-				D30957EC2E01ED0100C1C8D6 /* Stark iOS SampleTests */,
 				D30957F62E01ED0100C1C8D6 /* Stark iOS SampleUITests */,
 				D30957DD2E01ED0000C1C8D6 /* Products */,
 			);
@@ -130,9 +129,6 @@
 			dependencies = (
 				D30957EB2E01ED0100C1C8D6 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				D30957EC2E01ED0100C1C8D6 /* Stark iOS SampleTests */,
-			);
 			name = "Stark iOS SampleTests";
 			packageProductDependencies = (
 			);
@@ -158,6 +154,7 @@
 			);
 			name = "Stark iOS SampleUITests";
 			packageProductDependencies = (
+				D30958072E01F52500C1C8D6 /* StarkAccessibilityIOS */,
 			);
 			productName = "Stark iOS SampleUITests";
 			productReference = D30957F32E01ED0100C1C8D6 /* Stark iOS SampleUITests.xctest */;
@@ -195,6 +192,9 @@
 			);
 			mainGroup = D30957D32E01ECFF00C1C8D6;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D30958062E01F52500C1C8D6 /* XCRemoteSwiftPackageReference "stark-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D30957DD2E01ED0000C1C8D6 /* Products */;
 			projectDirPath = "";
@@ -550,6 +550,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D30958062E01F52500C1C8D6 /* XCRemoteSwiftPackageReference "stark-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stark-contrast/stark-ios.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D30958072E01F52500C1C8D6 /* StarkAccessibilityIOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D30958062E01F52500C1C8D6 /* XCRemoteSwiftPackageReference "stark-ios" */;
+			productName = StarkAccessibilityIOS;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D30957D42E01ECFF00C1C8D6 /* Project object */;
 }

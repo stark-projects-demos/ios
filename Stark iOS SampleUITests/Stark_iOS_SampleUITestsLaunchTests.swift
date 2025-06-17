@@ -2,8 +2,6 @@
 //  Stark_iOS_SampleUITestsLaunchTests.swift
 //  Stark iOS SampleUITests
 //
-//  Created by Brian Powers on 6/17/25.
-//
 
 import XCTest
 
