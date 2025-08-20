@@ -3,42 +3,25 @@
 //  Stark iOS Sample
 //
 
+
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack(spacing: 24) {
-            Text("Stark Accessibility Demo")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-                .padding(.top, 32)
-
-            Text("This text has poor color contrast.")
-                .foregroundColor(Color(red: 0.8, green: 0.8, blue: 0.8)) // light gray on white
-                .padding(8)
-                .background(Color.white)
-                .cornerRadius(8)
-
-            Button(action: {
-                // No-op for demo
-            }) {
-                Text("Tiny Button")
-                    .font(.caption)
-                    .padding(4)
+    NavigationView {
+            List {
+                NavigationLink("Touch Target Too Small", destination: TouchTargetTooSmallView())
+                NavigationLink("Missing Labels on Active Images, Progress Bars, Sliders, Switches", destination: MissingLabelsActiveElementsView())
+                NavigationLink("Alert Missing Title/Description", destination: AlertMissingTitleView())
+                NavigationLink("Form Label Issues (Checkboxes, Radios, Groups)", destination: FormLabelIssuesView())
+                NavigationLink("Color Contrast & Color-Only Info", destination: ColorContrastIssuesView())
+                NavigationLink("Media Missing Captions/Descriptions", destination: MediaMissingCaptionsView())
+                NavigationLink("Images Missing Accessibility Labels", destination: ImagesMissingLabelsView())
             }
-            .background(Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(4)
-            .frame(width: 44, height: 24)
-
-            Image(systemName: "star.fill")
-                .resizable()
-                .frame(width: 40, height: 40)
-                .foregroundColor(.yellow)
-
-            Spacer()
+            .navigationTitle("Accessibility Demos")
         }
-        .padding()
+        .accessibilityLanguage("en-US")
+        }
     }
 }
 

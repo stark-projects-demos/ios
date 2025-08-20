@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D30958082E01F52500C1C8D6 /* StarkAccessibilityIOS in Frameworks */ = {isa = PBXBuildFile; productRef = D30958072E01F52500C1C8D6 /* StarkAccessibilityIOS */; };
+		659EB0782E4CD18E00C4D03A /* StarkAccessibilityIOS in Frameworks */ = {isa = PBXBuildFile; productRef = 659EB0772E4CD18E00C4D03A /* StarkAccessibilityIOS */; };
+		659EB07A2E4CD19800C4D03A /* StarkAccessibilityIOS in Frameworks */ = {isa = PBXBuildFile; productRef = 659EB0792E4CD19800C4D03A /* StarkAccessibilityIOS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				659EB07A2E4CD19800C4D03A /* StarkAccessibilityIOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,18 +67,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D30958082E01F52500C1C8D6 /* StarkAccessibilityIOS in Frameworks */,
+				659EB0782E4CD18E00C4D03A /* StarkAccessibilityIOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		659EB06F2E4CD10D00C4D03A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D30957D32E01ECFF00C1C8D6 = {
 			isa = PBXGroup;
 			children = (
 				D30957DE2E01ED0000C1C8D6 /* Stark iOS Sample */,
 				D30957F62E01ED0100C1C8D6 /* Stark iOS SampleUITests */,
+				659EB06F2E4CD10D00C4D03A /* Frameworks */,
 				D30957DD2E01ED0000C1C8D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -131,6 +141,7 @@
 			);
 			name = "Stark iOS SampleTests";
 			packageProductDependencies = (
+				659EB0792E4CD19800C4D03A /* StarkAccessibilityIOS */,
 			);
 			productName = "Stark iOS SampleTests";
 			productReference = D30957E92E01ED0100C1C8D6 /* Stark iOS SampleTests.xctest */;
@@ -154,7 +165,7 @@
 			);
 			name = "Stark iOS SampleUITests";
 			packageProductDependencies = (
-				D30958072E01F52500C1C8D6 /* StarkAccessibilityIOS */,
+				659EB0772E4CD18E00C4D03A /* StarkAccessibilityIOS */,
 			);
 			productName = "Stark iOS SampleUITests";
 			productReference = D30957F32E01ED0100C1C8D6 /* Stark iOS SampleUITests.xctest */;
@@ -193,7 +204,7 @@
 			mainGroup = D30957D32E01ECFF00C1C8D6;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				D30958062E01F52500C1C8D6 /* XCRemoteSwiftPackageReference "stark-ios" */,
+				659EB0742E4CD17400C4D03A /* XCLocalSwiftPackageReference "../stark-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D30957DD2E01ED0000C1C8D6 /* Products */;
@@ -551,21 +562,22 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCRemoteSwiftPackageReference section */
-		D30958062E01F52500C1C8D6 /* XCRemoteSwiftPackageReference "stark-ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/stark-contrast/stark-ios.git";
-			requirement = {
-				branch = main;
-				kind = branch;
-			};
+/* Begin XCLocalSwiftPackageReference section */
+		659EB0742E4CD17400C4D03A /* XCLocalSwiftPackageReference "../stark-ios" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "../stark-ios";
 		};
-/* End XCRemoteSwiftPackageReference section */
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D30958072E01F52500C1C8D6 /* StarkAccessibilityIOS */ = {
+		659EB0772E4CD18E00C4D03A /* StarkAccessibilityIOS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D30958062E01F52500C1C8D6 /* XCRemoteSwiftPackageReference "stark-ios" */;
+			package = 659EB0742E4CD17400C4D03A /* XCLocalSwiftPackageReference "../stark-ios" */;
+			productName = StarkAccessibilityIOS;
+		};
+		659EB0792E4CD19800C4D03A /* StarkAccessibilityIOS */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 659EB0742E4CD17400C4D03A /* XCLocalSwiftPackageReference "../stark-ios" */;
 			productName = StarkAccessibilityIOS;
 		};
 /* End XCSwiftPackageProductDependency section */
