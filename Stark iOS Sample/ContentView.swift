@@ -8,7 +8,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-    NavigationView {
+        NavigationView {
             List {
                 NavigationLink("Touch Target Too Small", destination: TouchTargetTooSmallView())
                 NavigationLink("Missing Labels on Active Images, Progress Bars, Sliders, Switches", destination: MissingLabelsActiveElementsView())
@@ -20,8 +20,7 @@ struct ContentView: View {
             }
             .navigationTitle("Accessibility Demos")
         }
-        .accessibilityLanguage("en-US")
-        }
+        .environment(\.locale, Locale(identifier: "en"))
     }
 }
 
