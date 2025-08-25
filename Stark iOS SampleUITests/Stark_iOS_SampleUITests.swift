@@ -14,11 +14,12 @@ final class Stark_iOS_SampleUITests: XCTestCase {
     
     @MainActor
     func testAccessibility() throws {
+        
         let app = XCUIApplication()
                 app.launch()
 
                 // Create a checker and audit the screen
                 let checker = AccessibilityChecker(starkProjectToken: "stark_••••••••••••••••••••••••••••••••")
-                try checker.auditScreen(application: app, scanName: "Demo iOS App")
+                try checker.auditScreen(application: app, scanName: "ios-instrumentation")
     }
 }

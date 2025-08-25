@@ -1,13 +1,13 @@
 {
-  "originHash" : "ccc33866d9a35b346e49924aff084c3f4286630357db31caa210e0632a7c9ba8",
+  "originHash" : "57da0cec5f0ca00d65f74775bbb854b14ebe7c81a1421a24b2e28035c440e596",
   "pins" : [
     {
       "identity" : "stark-ios",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/stark-contrast/stark-ios.git",
+      "location" : "https://github.com/stark-contrast/stark-ios",
       "state" : {
         "branch" : "main",
-        "revision" : "6767f3699724f30ca2e13ce0f3ece9a770e5e149"
+        "revision" : "98d6a0bafac4761180172c8706c13591d5f5d0f5"
       }
     }
   ],
