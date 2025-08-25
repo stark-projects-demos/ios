@@ -14,6 +14,7 @@ struct MediaMissingCaptionsView: View {
                 Text("No captions or description provided.")
                     .font(.caption)
                     .foregroundColor(.secondary)
+                
                 Text("Passing Example:")
                     .font(.headline)
                     .accessibilityAddTraits(.isHeader)

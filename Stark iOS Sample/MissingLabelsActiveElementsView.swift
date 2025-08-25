@@ -19,6 +19,7 @@ struct MissingLabelsActiveElementsView: View {
                     EmptyView() // No label
                 }
                 .labelsHidden()
+                
                 Text("Passing Examples:")
                     .font(.headline)
                     .accessibilityAddTraits(.isHeader)

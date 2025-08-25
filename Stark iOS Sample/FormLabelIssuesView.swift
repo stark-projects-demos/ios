@@ -27,6 +27,7 @@ struct FormLabelIssuesView: View {
                         Image(systemName: radio == 2 ? "largecircle.fill.circle" : "circle")
                     } // No label
                 }
+                
                 Text("Passing Examples:")
                     .font(.headline)
                     .accessibilityAddTraits(.isHeader)

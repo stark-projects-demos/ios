@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		659EB0782E4CD18E00C4D03A /* StarkAccessibilityIOS in Frameworks */ = {isa = PBXBuildFile; productRef = 659EB0772E4CD18E00C4D03A /* StarkAccessibilityIOS */; };
-		659EB07A2E4CD19800C4D03A /* StarkAccessibilityIOS in Frameworks */ = {isa = PBXBuildFile; productRef = 659EB0792E4CD19800C4D03A /* StarkAccessibilityIOS */; };
+		651918BB2E5CA0CE0018958E /* StarkAccessibilityIOS in Frameworks */ = {isa = PBXBuildFile; productRef = 651918BA2E5CA0CE0018958E /* StarkAccessibilityIOS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +58,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659EB07A2E4CD19800C4D03A /* StarkAccessibilityIOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,7 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				659EB0782E4CD18E00C4D03A /* StarkAccessibilityIOS in Frameworks */,
+				651918BB2E5CA0CE0018958E /* StarkAccessibilityIOS in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,7 +139,6 @@
 			);
 			name = "Stark iOS SampleTests";
 			packageProductDependencies = (
-				659EB0792E4CD19800C4D03A /* StarkAccessibilityIOS */,
 			);
 			productName = "Stark iOS SampleTests";
 			productReference = D30957E92E01ED0100C1C8D6 /* Stark iOS SampleTests.xctest */;
@@ -165,7 +162,7 @@
 			);
 			name = "Stark iOS SampleUITests";
 			packageProductDependencies = (
-				659EB0772E4CD18E00C4D03A /* StarkAccessibilityIOS */,
+				651918BA2E5CA0CE0018958E /* StarkAccessibilityIOS */,
 			);
 			productName = "Stark iOS SampleUITests";
 			productReference = D30957F32E01ED0100C1C8D6 /* Stark iOS SampleUITests.xctest */;
@@ -204,7 +201,7 @@
 			mainGroup = D30957D32E01ECFF00C1C8D6;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
-				659EB0742E4CD17400C4D03A /* XCLocalSwiftPackageReference "../stark-ios" */,
+				651918B92E5CA0CE0018958E /* XCRemoteSwiftPackageReference "stark-ios" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D30957DD2E01ED0000C1C8D6 /* Products */;
@@ -562,22 +559,21 @@
 		};
 /* End XCConfigurationList section */
 
-/* Begin XCLocalSwiftPackageReference section */
-		659EB0742E4CD17400C4D03A /* XCLocalSwiftPackageReference "../stark-ios" */ = {
-			isa = XCLocalSwiftPackageReference;
-			relativePath = "../stark-ios";
+/* Begin XCRemoteSwiftPackageReference section */
+		651918B92E5CA0CE0018958E /* XCRemoteSwiftPackageReference "stark-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stark-contrast/stark-ios";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
 		};
-/* End XCLocalSwiftPackageReference section */
+/* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		659EB0772E4CD18E00C4D03A /* StarkAccessibilityIOS */ = {
+		651918BA2E5CA0CE0018958E /* StarkAccessibilityIOS */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 659EB0742E4CD17400C4D03A /* XCLocalSwiftPackageReference "../stark-ios" */;
-			productName = StarkAccessibilityIOS;
-		};
-		659EB0792E4CD19800C4D03A /* StarkAccessibilityIOS */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 659EB0742E4CD17400C4D03A /* XCLocalSwiftPackageReference "../stark-ios" */;
+			package = 651918B92E5CA0CE0018958E /* XCRemoteSwiftPackageReference "stark-ios" */;
 			productName = StarkAccessibilityIOS;
 		};
 /* End XCSwiftPackageProductDependency section */

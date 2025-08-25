@@ -19,6 +19,7 @@ struct ColorContrastIssuesView: View {
                     Circle().fill(Color.red).frame(width: 20, height: 20)
                     Circle().fill(Color.green).frame(width: 20, height: 20)
                 }
+                
                 Text("Passing Examples:")
                     .font(.headline)
                     .accessibilityAddTraits(.isHeader)

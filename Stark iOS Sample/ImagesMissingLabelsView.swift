@@ -11,6 +11,7 @@ struct ImagesMissingLabelsView: View {
                 Image("Stark Logo")
                     .resizable()
                     .frame(width: 100, height: 100)
+                
                 Text("Passing Examples:")
                     .font(.headline)
                     .accessibilityAddTraits(.isHeader)

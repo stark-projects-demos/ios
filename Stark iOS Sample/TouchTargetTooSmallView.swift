@@ -18,6 +18,7 @@ struct TouchTargetTooSmallView: View {
                 .foregroundColor(.white)
                 .cornerRadius(4)
                 .frame(width: 30, height: 20) // Intentionally too small
+                
                 Text("Passing Example:")
                     .font(.headline)
                     .accessibilityAddTraits(.isHeader)
