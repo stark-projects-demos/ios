@@ -18,6 +18,7 @@ struct AlertMissingTitleView: View {
                 } message: {
                     Text("")
                 }
+                
                 Text("Passing Example:")
                     .font(.headline)
                     .accessibilityAddTraits(.isHeader)
