@@ -6,24 +6,6 @@
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES"
       buildArchitectures = "Automatic">
-      <PostActions>
-         <ExecutionAction
-            ActionType = "Xcode.IDEStandardExecutionActionsCore.ExecutionActionType.ShellScriptAction">
-            <ActionContent
-               title = "Run Script"
-               scriptText = "export STARK_BASE_URL=http://localhost:3000&#10;/Users/daniel/code/swiftlint-tool/bazel-bin/stark-swiftlint-tool/stark-swiftlint-scan --stark-token stark_1452216e48434f07bd0cf4f6f6502e56 --name ios-demo-app-from-xcode --path &quot;${SRCROOT}&quot;&#10;">
-               <EnvironmentBuildable>
-                  <BuildableReference
-                     BuildableIdentifier = "primary"
-                     BlueprintIdentifier = "D30957DB2E01ED0000C1C8D6"
-                     BuildableName = "Stark iOS Sample.app"
-                     BlueprintName = "Stark iOS Sample"
-                     ReferencedContainer = "container:Stark iOS Sample.xcodeproj">
-                  </BuildableReference>
-               </EnvironmentBuildable>
-            </ActionContent>
-         </ExecutionAction>
-      </PostActions>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
